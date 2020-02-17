@@ -1,5 +1,6 @@
 extern crate primal;
 
+// Inspired from: https://www.quantamagazine.org/mathematicians-discover-prime-conspiracy-20160313/
 
 fn main() {
     let counter: Vec<Vec<i32>> = vec![
