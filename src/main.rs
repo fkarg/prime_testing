@@ -3,18 +3,7 @@ extern crate primal;
 // Inspired from: https://www.quantamagazine.org/mathematicians-discover-prime-conspiracy-20160313/
 
 fn main() {
-    let counter: Vec<Vec<i32>> = vec![
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    ];
+    let counter: Vec<Vec<i32>> = vec![ vec![0; 10]; 10];
 
     let (last, counter) = primal::Primes::all()
         .take(100_000_000)
